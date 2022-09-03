@@ -1,0 +1,65 @@
+.jumbotron {
+  padding-top: 9rem;
+  background-color: #e2edff;
+}
+
+#project {
+  background-color: #e2edff;
+  text-align: center;
+}
+
+section {
+  padding-top: 6rem;
+}
+
+/* Style Navbar */
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: tomato;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+/* End Navbar */
+
+/* Style Project */
+.images {
+  box-shadow: 1px 1px 1px 1px transparent;
+  align-items: center;
+}
+
+.card-body:hover {
+  background-color: tomato;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+/* End Project */
+
+/* Icon Footer */
+.icons {
+  background-color: none;
+  color: white;
+  font-size: 20px;
+}
+
+.icons:hover {
+  transform: rotateZ(3deg);
+  transition: 0.3s ease-in-out;
+  color: tomato;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.icon:hover {
+  font-size: 25px;
+  transform: rotateZ(45deg);
+  transition: 0.3s ease-in-out;
+}
+
+/* End Icon Footer */
