@@ -34,6 +34,36 @@ section {
 
 /* End Project */
 
+.display-mobile {
+  display: none;
+}
+
+/* Footer */
+.fa-html5:hover {
+  font-size: 20px;
+  background-color: white;
+  color: tomato;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+.fa-bootstrap:hover {
+  font-size: 20px;
+  background-color: white;
+  color: #712cf9;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+.fa-square-js:hover {
+  font-size: 20px;
+  background-color: black;
+  color: #f0db4f;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+
 /* Style Icon */
 .icons {
   display: flex;
@@ -110,10 +140,6 @@ section {
   }
 }
 
-.display-mobile {
-  display: none;
-}
-
 /* Display Icon Mobile */
 @media screen and (max-width: 767px) {
   .display-pc {
@@ -141,29 +167,3 @@ section {
   }
 }
 /* End Display Icon Mobile */
-
-/* Footer */
-.fa-html5:hover {
-  font-size: 20px;
-  background-color: white;
-  color: tomato;
-  border-radius: 10%;
-  transition-property: outline-offset, outline-color, background-color;
-  transition: 0.5s;
-}
-.fa-bootstrap:hover {
-  font-size: 20px;
-  background-color: white;
-  color: #712cf9;
-  border-radius: 10%;
-  transition-property: outline-offset, outline-color, background-color;
-  transition: 0.5s;
-}
-.fa-square-js:hover {
-  font-size: 20px;
-  background-color: black;
-  color: #f0db4f;
-  border-radius: 10%;
-  transition-property: outline-offset, outline-color, background-color;
-  transition: 0.5s;
-}
