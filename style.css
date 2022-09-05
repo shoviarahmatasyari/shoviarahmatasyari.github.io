@@ -34,35 +34,136 @@ section {
 
 /* End Project */
 
-/* Icon Footer */
+/* Style Icon */
 .icons {
-  background-color: none;
-  color: white;
-  font-size: 20px;
-}
-
-.icons:hover {
-  transform: rotateZ(3deg);
-  transition: 0.3s ease-in-out;
-  color: tomato;
+  display: flex;
+  column-gap: 25px;
 }
 
 .icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   font-size: 20px;
-  margin-bottom: 10px;
+  color: #0d6efd;
+  border-radius: 50%;
+  outline: 2px solid #0d6efd;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.5s;
 }
 
 .icon:hover {
-  font-size: 25px;
-  transform: rotateZ(45deg);
-  transition: 0.3s ease-in-out;
+  outline-offset: 4px;
+  color: white;
 }
 
-/* End Icon Footer */
+.icon:hover i {
+  animation: shake 1s;
+}
 
-@media (min-width: 375px) and (max-width: 745px) {
-  .icon {
-    padding-right: 5px;
-    margin-bottom: 10px;
+/* Animasi Icon */
+.icon--instagram:hover {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  outline-color: #a02d76;
+}
+
+.icon--github:hover {
+  background-color: black;
+  outline-color: black;
+}
+
+.icon--twitter:hover {
+  background-color: #1da1f2;
+  outline-color: #1da1f2;
+}
+
+.icon--whatsapp:hover {
+  background-color: #25d366;
+  outline-color: #25d366;
+}
+
+.icon--facebook:hover {
+  background-color: #3b5998;
+  outline-color: #3b5998;
+}
+
+.icon--linkedin:hover {
+  background-color: #0e76a8;
+  outline-color: #0e76a8;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
   }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
+
+.display-mobile {
+  display: none;
+}
+
+/* Display Icon Mobile */
+@media screen and (max-width: 767px) {
+  .display-pc {
+    display: none;
+  }
+
+  .display-mobile {
+    display: block;
+  }
+  .icon {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+
+  .text-icon {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #0d6efd;
+  }
+
+  .text-icon:hover {
+    color: tomato;
+    font-style: italic;
+    transition: 0.5s;
+  }
+}
+/* End Display Icon Mobile */
+
+/* Footer */
+.fa-html5:hover {
+  font-size: 20px;
+  background-color: white;
+  color: tomato;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+.fa-bootstrap:hover {
+  font-size: 20px;
+  background-color: white;
+  color: #712cf9;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
+}
+.fa-square-js:hover {
+  font-size: 20px;
+  background-color: black;
+  color: #f0db4f;
+  border-radius: 10%;
+  transition-property: outline-offset, outline-color, background-color;
+  transition: 0.5s;
 }
