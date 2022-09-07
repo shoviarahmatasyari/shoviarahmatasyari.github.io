@@ -4,8 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portofolio Shovia Rahmat Asy'ari</title>
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -13,7 +16,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font-family Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -25,17 +33,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item bar">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            <li class="nav-item">
+              <a class="nav-link bar" aria-current="page" href="#home">Home</a>
             </li>
-            <li class="nav-item bar">
-              <a class="nav-link" href="#about">About</a>
+            <li class="nav-item">
+              <a class="nav-link bar" href="#about">About</a>
             </li>
-            <li class="nav-item bar">
-              <a class="nav-link" href="#project">Project</a>
+            <li class="nav-item">
+              <a class="nav-link bar" href="#project">Project</a>
             </li>
-            <li class="nav-item bar">
-              <a class="nav-link" href="#contact">Contact Me</a>
+            <li class="nav-item">
+              <a class="nav-link bar" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bar" href="#contact">Contact Me</a>
             </li>
           </ul>
         </div>
@@ -146,6 +157,77 @@
     </section>
     <!-- End Project -->
 
+    <!-- Skill -->
+    <section id="skill">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h1>Skill</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-3 mb-3">
+            <div class="nav nav-pills justify-content-center text-center" id="pills-tab" role="tablist">
+              <div class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-language-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Language</button>
+              </div>
+              <div class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-framework-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Framework</button>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center text text-center">
+            <div class="col-md-6 mt-2">
+              <div class="tab-content text-primary" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                  <li class="me-4 fa-brands fa-html5 skill-icon" style="color: tomato" data-aos="zoom-in" data-aos-offset="100">
+                    <p id="level">Intermediate</p>
+                  </li>
+                  <li class="me-4 fa-brands fa-css3 skill-icon" style="color: #2d49e7" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+                    <p id="level">Intermediate</p>
+                  </li>
+                  <li class="me-4 fa-brands fa-js skill-icon" style="color: #f0db4f" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+                    <p id="level">Beginner</p>
+                  </li>
+                  <li class="me-4 fa-brands fa-php skill-icon" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                    <p id="level">Intermediate</p>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <li class="me-4 fa-brands fa-bootstrap skill-icon" style="color: #712cf9" data-aos="zoom-in" data-aos-offset="100">
+                  <p id="level">Intermediate</p>
+                </li>
+                <li class="me-4 fa-brands fa-react skill-icon" style="color: aqua" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="100">
+                  <p id="level">Beginner</p>
+                </li>
+                <li class="me-4 fa-brands fa-laravel skill-icon" style="color: red" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="200">
+                  <p id="level">Beginner</p>
+                </li>
+                <li class="me-4 fa-brands fa-codeigniter skill-icon" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+                  <iconify-icon icon="simple-icons:codeigniter" style="color: tomato"></iconify-icon>
+                  <p id="level">Intermediate</p>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#e2edff"
+          fill-opacity="1"
+          d="M0,96L26.7,85.3C53.3,75,107,53,160,58.7C213.3,64,267,96,320,128C373.3,160,427,192,480,208C533.3,224,587,224,640,192C693.3,160,747,96,800,90.7C853.3,85,907,139,960,149.3C1013.3,160,1067,128,1120,128C1173.3,128,1227,160,1280,160C1333.3,160,1387,128,1413,112L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- End Skill -->
+
     <!-- Contact -->
 
     <section id="contact">
@@ -182,102 +264,103 @@
             </form>
             <!-- Display PC -->
             <div class="row justify-content-start pt-4 display-pc">
-              <div class="col-md-4 mt-3 icons" data-aos="zoom-in" data-aos-offset="200">
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200">
                 <a href="https://instagram.com/shoviarahmatasyari" class="icon icon--instagram" target="_blank">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
-              <div class="col-md-4 mt-3 icons" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
                 <a href="https://github.com/shoviarahmatasyari" class="icon icon--github" target="_blank">
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
-              <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200">
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200">
                 <a href="https://twitter.com/shoviarahmat" class="icon icon--twitter" target="_blank">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </div>
-              <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300">
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300">
                 <a href="https://wa.me/6289670774347" class="icon icon--whatsapp" target="_blank">
                   <i class="fa-brands fa-whatsapp"></i>
                 </a>
               </div>
-              <div class="col-md-4 mt-3 mb-4 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400">
+              <div class="col-md-4 mt-3 mb-4" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400">
                 <a href="https://facebook.com/shoviarahmatasyari" class="icon icon--facebook" target="_blank">
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </div>
-              <div class="col-md-4 mt-3 mb-4 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500">
+              <div class="col-md-4 mt-3 mb-4" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500">
                 <a href="https://www.linkedin.com/in/shovia-asy-ari-927938171/" class="icon icon--linkedin" target="_blank">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
               </div>
+            </div>
+            <!-- End Display PC -->
+
+            <!-- Display Mobile -->
+            <div class="row justify-content-start pt-4 display-mobile">
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200">
+                <a href="https://instagram.com/shoviarahmatasyari" class="icon icon--instagram" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <div class="text-icon">Instagram</div>
+              </div>
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
+                <a href="https://github.com/shoviarahmatasyari" class="icon icon--github" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <div class="text-icon">Github</div>
+              </div>
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200">
+                <a href="https://twitter.com/shoviarahmat" class="icon icon--twitter" target="_blank">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <div class="text-icon">Twitter</div>
+              </div>
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300">
+                <a href="https://wa.me/6289670774347" class="icon icon--whatsapp" target="_blank">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <div class="text-icon">Whatsapp</div>
+              </div>
+              <div class="col-md-4 mt-3" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400">
+                <a href="https://facebook.com/shoviarahmatasyari" class="icon icon--facebook" target="_blank">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <div class="text-icon">Facebook</div>
+              </div>
+              <div class="col-md-4 mt-3 mb-4" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500">
+                <a href="https://www.linkedin.com/in/shovia-asy-ari-927938171/" class="icon icon--linkedin" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <div class="text-icon">Linkedin</div>
+              </div>
+            </div>
+            <!-- End Display Mobile -->
           </div>
-          <!-- End Display PC -->
-
-          <!-- Display Mobile -->
-          <div class="row justify-content-start pt-4 display-mobile">
-            <div class="col-md-4 mt-3 icons" data-aos="zoom-in" data-aos-offset="200">
-              <a href="https://instagram.com/shoviarahmatasyari" class="icon icon--instagram" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <div class="text-icon">Instagram</div>
-            </div>
-            <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100">
-              <a href="https://github.com/shoviarahmatasyari" class="icon icon--github" target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <div class="text-icon">Github</div>
-            </div>
-            <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="200">
-              <a href="https://twitter.com/shoviarahmat" class="icon icon--twitter" target="_blank">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-              <div class="text-icon">Twitter</div>
-            </div>
-            <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300">
-              <a href="https://wa.me/6289670774347" class="icon icon--whatsapp" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-              <div class="text-icon">Whatsapp</div>
-            </div>
-            <div class="col-md-4 mt-3 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="400">
-              <a href="https://facebook.com/shoviarahmatasyari" class="icon icon--facebook" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-              <div class="text-icon">Facebook</div>
-            </div>
-            <div class="col-md-4 mt-3 mb-4 icons " data-aos="zoom-in" data-aos-offset="200" data-aos-delay="500">
-              <a href="https://www.linkedin.com/in/shovia-asy-ari-927938171/" class="icon icon--linkedin" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <div class="text-icon">Linkedin</div>
-            </div>
-        </div>
-        <!-- End Display Mobile -->
-
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#0d6efd"
+          fill-opacity="1"
+          d="M0,96L30,96C60,96,120,96,180,106.7C240,117,300,139,360,165.3C420,192,480,224,540,234.7C600,245,660,235,720,234.7C780,235,840,245,900,234.7C960,224,1020,192,1080,186.7C1140,181,1200,203,1260,213.3C1320,224,1380,224,1410,224L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
     </section>
     <!-- End Contact -->
 
     <!-- Footer -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path
-        fill="#0d6efd"
-        fill-opacity="1"
-        d="M0,96L30,96C60,96,120,96,180,106.7C240,117,300,139,360,165.3C420,192,480,224,540,234.7C600,245,660,235,720,234.7C780,235,840,245,900,234.7C960,224,1020,192,1080,186.7C1140,181,1200,203,1260,213.3C1320,224,1380,224,1410,224L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
-      ></path>
-    </svg>
     <footer class="bg-primary text-white">
       <div class="container text-center">
         <div class="row">
           <div class="col mb-4">
             <h6>Created by : Shovia Rahmat Asy'ari</h6>
-            <h7>Technology using :
-               <i class="fa-brands fa-html5"></i>
-               <i class="fa-brands fa-bootstrap"></i>
-               <i class="fa-brands fa-square-js"></i>
+            <h7
+              >Technology using :
+              <i class="fa-brands fa-html5 footer-html5"></i>
+              <i class="fa-brands fa-bootstrap footer-bootstrap"></i>
+              <i class="fa-brands fa-square-js footer-js"></i>
             </h7>
           </div>
         </div>
@@ -286,6 +369,7 @@
     <!-- End Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
 
     <!-- AOS -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
